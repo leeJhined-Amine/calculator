@@ -5,8 +5,10 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-right: 30%;
+    margin-right: auto;
+    margin-left: auto;
     gap: 30px;
+    width: 25%;
 }
 .align{
     display: flex;
@@ -14,25 +16,29 @@ section{
     justify-content:space-between;
 }
 .output{
-    background-color: #52796F;
+    background-color: #588157;
     font-size: xx-large;
     border-radius: 10px;
     text-align: right;
-    width: 550px;
-    padding:0%;
+    width: 100%;
+}
+.output h1{
+    margin-right: 3%;
 }
 .input{
-    background-color:#52796F;
+    background-color:#588157;
     display: grid;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns:repeat(4,1fr);
-    gap: 10px;
-    padding: 10px;
     color: #CAD2C5;
-    width: 530px ; 
-    height: 300px;
+    width: 100%; 
+    height: 500px;
     border-radius: 10px;
-    
+    gap: 0px;
+}
+.but{
+    display: grid;
+    place-items: center;
 }
 p{
     color: #CAD2C5;
@@ -42,16 +48,20 @@ p{
     font-size: large;
 }
 #reset{
-    grid-area:5/1/6/3 ;
-    background-color: #fb8b24;
+    grid-area:5/1/6/3;
 }
 #equal{
     grid-area:5/3/6/5;
-    background-color: #9a031e;
+}
+.reset{
+    background-color:#9a031e ;
+}
+.equal{
+    background-color: #fb8b24;
 }
 body{
-    margin-left: 20%;
-    margin-right: 20%;
+    display: grid;
+    place-items: center;/
 }
 button{
     border-radius: 10%;
@@ -67,16 +77,23 @@ h1 :nth-child(2){
     background-color: #fb8b24;
 }
 .button{
-    height:auto;
+    height:80%;
     color: #000000;
-    font-size: x-large;
+    font-size: 35px;
     border-radius: 15px;
     font-family:"Abril Fatface", serif;
+    width: 80%;
+    padding: 5px;
+    border: solid 3px white;
 }
-.button :hover{
-    color: #656d4a;
+.button:hover{
+    background-color:#25a18e;
+    cursor: pointer;
+    color: #ccc;
 }
-
+.button:active{
+    background-color: #2f3e46   ;
+}
 .switch {
     position: relative;
     display: flex;
@@ -115,11 +132,11 @@ h1 :nth-child(2){
   }
   
   input:checked + .slider {
-    background-color: #52796F;
+    background-color: #588157;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #52796F;
+    box-shadow: 0 0 1px #588157;
   }
   
   input:checked + .slider:before {
@@ -137,12 +154,15 @@ h1 :nth-child(2){
   }
 @media screen and (max-width: 600px) {
     section{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-inline: 5%;
+        width: 90%;
     }
     .align{
         display: flex;
         flex-direction: row;
         justify-content:space-between;
+    }
+    .input, .output{
+        width: 100%;
     }
 }
