@@ -15,12 +15,22 @@ section{
     flex-direction: row;
     justify-content:space-between;
 }
-.output{
+/* .output{
     background-color: #588157;
     font-size: xx-large;
     border-radius: 10px;
     text-align: right;
     width: 100%;
+} */
+#output{
+    width: 99%;
+    height: 80px;
+    border-radius: 10px;
+    background-color:#588157;
+    font-size: 40px;
+}
+#output::placeholder{
+    color: white;
 }
 .output h1{
     margin-right: 3%;

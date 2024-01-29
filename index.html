@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <>
+    <head>
         <meta charset="utf-8" />
         <meta name="viewport", content="width=device-width", initial-scale="1.0">
         <title>CALCULATOR</title>
@@ -23,56 +23,56 @@
                 </div>    
             </div>
             <div class="output" id="outputMain">
-                <input type="text"  name="output" id="output">
+                <input id="output" readonly>
             </div>
-            <div class="input" id="">
+            <div class="input" id="input">
                 <div class="but">
-                    <input type="button" value="7" class="button"/>
+                    <input type="button" onclick="showResults('7')" value="7" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="8" class="button"/>
+                    <input type="button" onclick="showResults('8')" value="8" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="9" class="button"/>
+                    <input type="button" onclick="showResults('9')" value="9" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="Del" class="button" id="DEL"/>
+                    <input type="button" onclick="clearDisplay()" value="Del" class="button" id="DEL"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="4" class="button"/>
+                    <input type="button" onclick="showResults('4')" value="4" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="5" class="button"/>
+                    <input type="button" onclick="showResults('5')" value="5" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="6" class="button"/>
+                    <input type="button" onclick="showResults('6')" value="6" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="+" class="button" id="operation"/>
+                    <input type="button" onclick="showResults('+')" value="+" class="button" id="operation"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="1" class="button"/>
+                    <input type="button" onclick="showResults('1')" value="1" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="2" class="button"/>
+                    <input type="button" onclick="showResults('2')" value="2" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="3" class="button"/>
+                    <input type="button" onclick="showResults('3')" value="3" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="-" class="button" id="operation"/>
+                    <input type="button" onclick="showResults('-')" value="-" class="button" id="operation"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="." class="button"/>
+                    <input type="button" onclick="showResults('.')" value="." class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="0" class="button"/>
+                    <input type="button" onclick="showResults('0')" value="0" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="/" class="button" id="operation"/>
+                    <input type="button" onclick="showResults('/')" value="/" class="button" id="operation"/>
                 </div>
                 <div class="but">
-                    <input type="button" value="x" class="button" id="operation"/>
+                    <input type="button" onclick="showResults('x')" value="x" class="button" id="operation"/>
                 </div>
                 <div class="but" id="reset">
                     <input type="button" value="Reset" class="button reset" />

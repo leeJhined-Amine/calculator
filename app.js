@@ -1,12 +1,25 @@
+// function showResults(){
+//     let output = document.getElementById('output').value;
+//     let result = parseInt(input.value);
+//     output.value = result;
+// }
 
+// function calculate(input, operation){
+//     let result = input.value 
+// }
 
-function showResults(){
-    let input = document.getElementById('output').value;
+const output = document.getElementById("output");
 
-    let result = eval(input.value);
-    input.value = result;
+function showResults (input){
+    output.value += input;
 }
 
-function calculate(input, operation){
-    let result = input.value 
+function clearDisplay(){
+    output.value = "";
+}
+function calculate(){
+    display.value = parseFloat(display.value);
+}
+function Delete(){
+
 }
