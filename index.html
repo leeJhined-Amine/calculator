@@ -36,7 +36,7 @@
                     <input type="button" onclick="showResults('9')" value="9" class="button"/>
                 </div>
                 <div class="but">
-                    <input type="button" onclick="clearDisplay()" value="Del" class="button" id="DEL"/>
+                    <input type="button" onclick="Delete()" value="Del" class="button" id="DEL"/>
                 </div>
                 <div class="but">
                     <input type="button" onclick="showResults('4')" value="4" class="button"/>
@@ -72,13 +72,13 @@
                     <input type="button" onclick="showResults('/')" value="/" class="button" id="operation"/>
                 </div>
                 <div class="but">
-                    <input type="button" onclick="showResults('x')" value="x" class="button" id="operation"/>
+                    <input type="button" onclick="showResults('*')" value="x" class="button" id="operation"/>
                 </div>
                 <div class="but" id="reset">
-                    <input type="button" value="Reset" class="button reset" />
+                    <input type="button" onclick="clearDisplay()" value="Reset" class="button reset" />
                 </div>
                 <div class="but" id="equal">
-                    <input type="button" value="=" class="button equal" onclick="showResults()"/>
+                    <input type="button" onclick="calculate()" value="=" class="button equal"/>
                 </div>
             </div>
         </section>    

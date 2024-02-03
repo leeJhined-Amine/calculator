@@ -15,25 +15,16 @@ section{
     flex-direction: row;
     justify-content:space-between;
 }
-/* .output{
-    background-color: #588157;
-    font-size: xx-large;
-    border-radius: 10px;
-    text-align: right;
-    width: 100%;
-} */
 #output{
     width: 99%;
     height: 80px;
     border-radius: 10px;
     background-color:#588157;
     font-size: 40px;
+    text-align: right;
 }
 #output::placeholder{
     color: white;
-}
-.output h1{
-    margin-right: 3%;
 }
 .input{
     background-color:#588157;
@@ -109,15 +100,15 @@ h1 :nth-child(2){
     display: flex;
     width: 60px;
     height: 30px;
-  }
+}
   
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -127,9 +118,9 @@ h1 :nth-child(2){
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -139,29 +130,29 @@ h1 :nth-child(2){
     background-color: #9a031e;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  input:checked + .slider {
+input:checked + .slider {
     background-color: #588157;
-  }
+}
   
-  input:focus + .slider {
+input:focus + .slider {
     box-shadow: 0 0 1px #588157;
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
   
-  .slider.round {
+.slider.round {
     border-radius: 34px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 @media screen and (max-width: 600px) {
     section{
         margin-inline: 5%;

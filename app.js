@@ -1,25 +1,15 @@
-// function showResults(){
-//     let output = document.getElementById('output').value;
-//     let result = parseInt(input.value);
-//     output.value = result;
-// }
-
-// function calculate(input, operation){
-//     let result = input.value 
-// }
-
-const output = document.getElementById("output");
-
 function showResults (input){
+    const output = document.getElementById("output");
     output.value += input;
 }
 
 function clearDisplay(){
-    output.value = "";
+    output.value = '';
 }
 function calculate(){
-    display.value = parseFloat(display.value);
+    output.value = eval(output.value);
 }
 function Delete(){
-
+    const output = document.getElementById("output");
+    output.value = output.value.slice(0,-1);
 }
